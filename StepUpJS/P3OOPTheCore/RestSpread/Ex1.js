@@ -48,8 +48,10 @@ const sum = Object.keys(obj)
     .filter(item => item.cost > 0)
     .map(item => item.cost * item.amount)
     .reduce((sum, next) => sum + next);
+console.log(sum);
 
 const sum2 = Object.values(obj)
     .filter(item => item.cost > 0)
     .map(item => item.cost * item.amount)
     .reduce((sum, next) => sum + next);
+console.log(sum2);
